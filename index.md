@@ -1,1 +1,1 @@
-[test](/docs/test.md)
+[test](/docs/content/posts/test.md)

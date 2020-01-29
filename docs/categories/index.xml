@@ -20,5 +20,15 @@
 Swapping bits at given positions To swap bits at given positions, we will first see whether the bits are even different. If the bits are different then we can just XOR with a bitmask to flip them essentially swapping the bits as a result.</description>
     </item>
     
+    <item>
+      <title>Parity of a number</title>
+      <link>http://algorithms.gluecoders.com/2020/01/parityofnumber/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://algorithms.gluecoders.com/2020/01/parityofnumber/</guid>
+      <description>Introduction Parity is 1 if the number of set bits are odd else it is 0.
+Calculating number of set bits by AND // &amp;quot;AND&amp;quot; between num and num-1 will always remove rightmost set bit(bit which is 1) public static int parityByAndWithLesserNumber(long num) { int total = 0; while (num != 0) { total++; num = num &amp;amp; (num - 1); } return total &amp;amp; 1 ; }  Caching for lower order numbers private static int parityByCache(int x, int[] cache, int numberBitSize) { int cacheUnit = numberBitSize / 4; int bitMask = (1 &amp;lt;&amp;lt; cacheUnit) - 1; int parity = 0; parity ^= cache[x &amp;amp; bitMask]; parity ^= cache[(x &amp;gt;&amp;gt; cacheUnit) &amp;amp; bitMask]; parity ^= cache[(x &amp;gt;&amp;gt; 2 * cacheUnit) &amp;amp; bitMask]; parity ^= cache[(x &amp;gt;&amp;gt; 3 * cacheUnit) &amp;amp; bitMask]; return parity; } private static int[] buildParityCache(int numberBitSize) { int[] cache = new int[(1 &amp;lt;&amp;lt; numberBitSize / 4)]; IntStream.</description>
+    </item>
+    
   </channel>
 </rss>

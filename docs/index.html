@@ -131,8 +131,8 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="http://algorithms.gluecoders.com/categories/binary/" class="category-list-link">binary</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="http://algorithms.gluecoders.com/categories/bit/" class="category-list-link">bit</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="http://algorithms.gluecoders.com/categories/binary/" class="category-list-link">binary</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="http://algorithms.gluecoders.com/categories/bit/" class="category-list-link">bit</a><span class="category-list-count">2</span></li>
         </ul>
     </div>
 </div>
@@ -145,6 +145,16 @@
                 <div class="item-inner">
                     <p class="item-title">
                         <a href="http://algorithms.gluecoders.com/2020/01/bithacks/" class="title">Bit Hacks</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-01-29 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-01-29</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="http://algorithms.gluecoders.com/2020/01/parityofnumber/" class="title">Parity of a number</a>
                     </p>
                     <p class="item-date">
                         <time datetime="2020-01-29 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-01-29</time>
@@ -199,6 +209,41 @@ Swapping bits at given positions To swap bits at given positions, we will first 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/01/bithacks/#comments" class="article-comment-link">Comments</a></span>
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 242words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/01/parityofnumber/"
+    >Parity of a number</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">Introduction Parity is 1 if the number of set bits are odd else it is 0.
+Calculating number of set bits by AND // &quot;AND&quot; between num and num-1 will always remove rightmost set bit(bit which is 1) public static int parityByAndWithLesserNumber(long num) { int total = 0; while (num != 0) { total++; num = num &amp; (num - 1); } return total &amp; 1 ; }  Caching for lower order numbers private static int parityByCache(int x, int[] cache, int numberBitSize) { int cacheUnit = numberBitSize / 4; int bitMask = (1 &lt;&lt; cacheUnit) - 1; int parity = 0; parity ^= cache[x &amp; bitMask]; parity ^= cache[(x &gt;&gt; cacheUnit) &amp; bitMask]; parity ^= cache[(x &gt;&gt; 2 * cacheUnit) &amp; bitMask]; parity ^= cache[(x &gt;&gt; 3 * cacheUnit) &amp; bitMask]; return parity; } private static int[] buildParityCache(int numberBitSize) { int[] cache = new int[(1 &lt;&lt; numberBitSize / 4)]; IntStream.</div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="http://algorithms.gluecoders.com/2020/01/parityofnumber/" class="">
+  <time datetime="2020-01-29 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-01-29</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/bit/"> bit </a>
+  <a class="article-category-link" href="/categories/binary/"> binary </a>
+</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2020/01/parityofnumber/#comments" class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 165words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
       </p>
     </article></div>
   

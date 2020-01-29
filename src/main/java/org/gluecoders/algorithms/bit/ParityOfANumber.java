@@ -21,7 +21,6 @@ public class ParityOfANumber {
     }
 
     private static int parityByCache(int x, int[] cache, int numberBitSize) {
-        System.out.println("API " + (Integer.bitCount(x) % 2 == 0 ? 0 : 1));
         int cacheUnit = numberBitSize / 4;
         int bitMask = (1 << cacheUnit) - 1;
         int parity = 0;
@@ -34,20 +33,18 @@ public class ParityOfANumber {
 
     private static int[] buildParityCache(int numberBitSize) {
         int[] cache = new int[(1 << numberBitSize / 4)];
-        IntStream.range(0, (1 << 8) - 1)
-                .forEach(x -> cache[x] = Integer.bitCount(x) % 2 == 0 ? 0 : 1);
+        IntStream.range(0, (1 << (numberBitSize/4)) - 1)
+                .forEach(x -> cache[x] = Integer.bitCount(x) & 1);
         return cache;
     }
 
-    // "AND" between x and x-1 will always remove rightmost set bit(bit which is 1)
-    public static int parityByAndWithLesserNumber(long x) {
+    // "AND" between num and num-1 will always remove rightmost set bit(bit which is 1)
+    public static int parityByAndWithLesserNumber(long num) {
         int total = 0;
-        System.out.println("API " + Long.bitCount(x));
-        while (x != 0) {
+        while (num != 0) {
             total++;
-            x = x & (x - 1);
+            num = num & (num - 1);
         }
-        System.out.println("Total 1s " + total);
-        return total % 2 == 0 ? 0 : 1;
+        return total & 1 ;
     }
 }

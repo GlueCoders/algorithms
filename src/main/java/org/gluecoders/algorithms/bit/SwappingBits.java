@@ -10,13 +10,11 @@ public class SwappingBits {
                 .forEach(x-> swapBits(x, 5 ,20));
     }
 
-    public static long swapBits(long x, int i, int j) {
-       // System.out.println("Before swap X "+ x);
-        if (((x >> i) & 1) != ((x >> j) & 1)) {
+    public static long swapBits(long num, int i, int j) {
+        if (((num >> i) & 1) != ((num >> j) & 1)) {
             long bitMask = (1 << i) | (1 << j);
-            x ^= bitMask;
+            num ^= bitMask;
         }
-      //  System.out.println("After swap X "+ x);
-        return x;
+        return num;
     }
 }

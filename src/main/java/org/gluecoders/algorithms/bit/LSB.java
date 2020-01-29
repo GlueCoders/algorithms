@@ -17,7 +17,7 @@ public class LSB {
         return -1;
     }
 
-    public static long lowestSetBitNumber(long x) {
-        return x ^ (x & (x - 1));
+    public static long lowestSetBitNumber(long num) {
+        return num ^ (num & (num - 1));
     }
 }

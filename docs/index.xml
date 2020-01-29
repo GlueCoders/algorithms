@@ -1,32 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pure theme for Hugo</title>
+    <title>Algorithms</title>
     <link>http://algorithms.gluecoders.com/</link>
-    <description>Recent content on Pure theme for Hugo</description>
+    <description>Recent content on Algorithms</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://algorithms.gluecoders.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>http://algorithms.gluecoders.com/2019/03/test/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Bit Hacks</title>
+      <link>http://algorithms.gluecoders.com/2020/01/bithacks/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://algorithms.gluecoders.com/2019/03/test/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://algorithms.gluecoders.com/1/01/insertionsort/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://algorithms.gluecoders.com/1/01/insertionsort/</guid>
-      <description>#INSERTION SORT
-How it works Insertion sort is actually what we do when we have to sort a deck of playing cards. We start from left and keep placing low ranked cards towards left side</description>
+      <guid>http://algorithms.gluecoders.com/2020/01/bithacks/</guid>
+      <description>Introduction Since binary consists of only 1s and 0s, most operations can be done by flipping bits through XOR(^) operation. Applying XOR on two bits yields 1 only if both the bits are different.
+Swapping bits at given positions To swap bits at given positions, we will first see whether the bits are even different. If the bits are different then we can just XOR with a bitmask to flip them essentially swapping the bits as a result.</description>
     </item>
     
   </channel>

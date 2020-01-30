@@ -23,7 +23,7 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="Article showing basic bit hacks" />
+  <meta name="description" content="How XOR and bit shifting can solve most of the bit problems" />
   <meta name="generator" content="Hugo 0.63.2 with theme pure" />
   <title>Bit Hacks - Algorithms</title>
   
@@ -33,13 +33,13 @@
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
   <meta property="og:title" content="Bit Hacks" />
-<meta property="og:description" content="Article showing basic bit hacks" />
+<meta property="og:description" content="How XOR and bit shifting can solve most of the bit problems" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://algorithms.gluecoders.com/2020/01/bithacks/" />
 <meta property="article:published_time" content="2020-01-29T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-01-29T00:00:00+00:00" />
 <meta itemprop="name" content="Bit Hacks">
-<meta itemprop="description" content="Article showing basic bit hacks">
+<meta itemprop="description" content="How XOR and bit shifting can solve most of the bit problems">
 <meta itemprop="datePublished" content="2020-01-29T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-01-29T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="242">
@@ -48,7 +48,7 @@
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Bit Hacks"/>
-<meta name="twitter:description" content="Article showing basic bit hacks"/>
+<meta name="twitter:description" content="How XOR and bit shifting can solve most of the bit problems"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -214,8 +214,6 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/01/bithacks/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 242words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
@@ -279,6 +277,9 @@ Afterwards XORing the AND result with original num will cancel all the 1s except
     </div>
   </article>
 <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
 </section>
 
 </div><nav class="bar bar-footer clearfix" data-stick-bottom>
@@ -301,7 +302,7 @@ Afterwards XORing the AND result with original num will cancel all the 1s except
             </li>
         </ul>
         <div class="bar-right">
-            <div class="share-component" data-sites="facebook,twitter"
+            <div class="share-component" data-sites="facebook,twitter,linkedin"
                 data-mobile-sites=""></div>
         </div>
     </div>
@@ -383,6 +384,29 @@ Afterwards XORing the AND result with original num will cancel all the 1s except
     });
 </script>
 
+<script>
+    var disqus_config = function () {
+        this.page.url = 'http:\/\/algorithms.gluecoders.com\/2020\/01\/bithacks\/';
+        this.page.identifier = 'algorithms-1';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'algorithms-1' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-157329247-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
   </body>
 </html>
